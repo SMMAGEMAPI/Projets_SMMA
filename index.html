@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/photon-geocoder-autocomplete.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        #map {
+            width: 1171px;
+            height: 883px;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/photon-geocoder-autocomplete.min.js"></script>
+        <script src="resources/olms.js"></script>
+        <script src="layers/Perimetre_Syndicat_VF_1.js"></script><script src="layers/TRONCONSHYDRO_SMMA_2.js"></script><script src="layers/PLANS_D_EAU_SMMA_3.js"></script><script src="layers/A_NPRU_CHAMP_DU_PIN_4.js"></script><script src="layers/B_RIPISYLVE_MOSELLE_JARMENIL_5.js"></script><script src="layers/C_SAINT_OGER_6.js"></script><script src="layers/D_SOBA_7.js"></script><script src="layers/E_TRAVERSEE_EPINAL_8.js"></script><script src="layers/F_ETANGS_SOCOURT_GRIPPORT_9.js"></script><script src="layers/G_AFFLUENTS_MOSELLE_10.js"></script><script src="layers/H_MOSELLE_SOURCE_A_RUPT_11.js"></script><script src="layers/I_MOSELOTTE_ET_AFFLUENTS_12.js"></script><script src="layers/J_VOLOGNE_ET_AFFLUENTS_13.js"></script><script src="layers/K_MULETTE_PERLIERE_14.js"></script><script src="layers/L_DURBION_15.js"></script><script src="layers/M_NEUNE_16.js"></script><script src="layers/N_SEUILS_ST_NABORD_17.js"></script><script src="layers/O_MOSELLE_MOSELOTTE_18.js"></script><script src="layers/P_AFFLUENTS_MOSELLE_MOSELOTTE_19.js"></script><script src="layers/Q_ZONES_HUMIDES_20.js"></script><script src="layers/R_EURON_21.js"></script><script src="layers/S_CLEURIE_22.js"></script><script src="layers/T_HAUTE_MOSELOTTE_23.js"></script><script src="layers/U_MARCHE_C_PGL_24.js"></script><script src="layers/V_AVIERE_25.js"></script><script src="layers/X_HAUT_BARBA_26.js"></script><script src="layers/Y_FRICHE_BEAUMENIL_27.js"></script><script src="layers/RESSOURCE_EN_EAU_28.js"></script><script src="layers/Z_MODELISATION_HYDRAULIQUE_MOSELLE_FRANCAISE_29.js"></script>
+        <script src="styles/Perimetre_Syndicat_VF_1_style.js"></script><script src="styles/TRONCONSHYDRO_SMMA_2_style.js"></script><script src="styles/PLANS_D_EAU_SMMA_3_style.js"></script><script src="styles/A_NPRU_CHAMP_DU_PIN_4_style.js"></script><script src="styles/B_RIPISYLVE_MOSELLE_JARMENIL_5_style.js"></script><script src="styles/C_SAINT_OGER_6_style.js"></script><script src="styles/D_SOBA_7_style.js"></script><script src="styles/E_TRAVERSEE_EPINAL_8_style.js"></script><script src="styles/F_ETANGS_SOCOURT_GRIPPORT_9_style.js"></script><script src="styles/G_AFFLUENTS_MOSELLE_10_style.js"></script><script src="styles/H_MOSELLE_SOURCE_A_RUPT_11_style.js"></script><script src="styles/I_MOSELOTTE_ET_AFFLUENTS_12_style.js"></script><script src="styles/J_VOLOGNE_ET_AFFLUENTS_13_style.js"></script><script src="styles/K_MULETTE_PERLIERE_14_style.js"></script><script src="styles/L_DURBION_15_style.js"></script><script src="styles/M_NEUNE_16_style.js"></script><script src="styles/N_SEUILS_ST_NABORD_17_style.js"></script><script src="styles/O_MOSELLE_MOSELOTTE_18_style.js"></script><script src="styles/P_AFFLUENTS_MOSELLE_MOSELOTTE_19_style.js"></script><script src="styles/Q_ZONES_HUMIDES_20_style.js"></script><script src="styles/R_EURON_21_style.js"></script><script src="styles/S_CLEURIE_22_style.js"></script><script src="styles/T_HAUTE_MOSELOTTE_23_style.js"></script><script src="styles/U_MARCHE_C_PGL_24_style.js"></script><script src="styles/V_AVIERE_25_style.js"></script><script src="styles/X_HAUT_BARBA_26_style.js"></script><script src="styles/Y_FRICHE_BEAUMENIL_27_style.js"></script><script src="styles/RESSOURCE_EN_EAU_28_style.js"></script><script src="styles/Z_MODELISATION_HYDRAULIQUE_MOSELLE_FRANCAISE_29_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
